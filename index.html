@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samihan Joshi — Video Editor</title>
+    <meta name="description" content="Samihan Joshi — Video Editor specializing in YouTube, Shorts, Reels, Gaming and Social Media content.">
+    <meta name="author" content="Samihan Joshi">
+
+    <meta property="og:title" content="Samihan Joshi — Video Editor">
+    <meta property="og:description" content="Video editing portfolio — YouTube, Shorts, Reels, Gaming and Social Media.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="noise"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <div id="top"></div>
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="#top" class="brand" aria-label="Samihan home">
+                <span class="brand-logo-wrap">
+                    <img src="assets/logo.png" alt="Samihan logo" class="brand-logo">
+                </span>
+                <span class="brand-name">SAMIHAN</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Let's Talk <span>↗</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-copy reveal">
+                <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR SELECT PROJECTS</p>
+
+                <h1>
+                    I EDIT VIDEOS
+                    <span>THAT KEEP</span>
+                    <em>PEOPLE WATCHING.</em>
+                </h1>
+
+                <p class="hero-description">
+                    Video editor focused on sharp storytelling, clean motion,
+                    sound design and edits built for attention.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary magnetic">View my work <span>↓</span></a>
+                    <a href="#contact" class="btn btn-ghost">Start a project <span>↗</span></a>
+                </div>
+
+                <div class="hero-meta">
+                    <span>YOUTUBE</span>
+                    <span>SHORT-FORM</span>
+                   
+                    <span>SOCIAL</span>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="hero-card">
+                    <div class="hero-card-top">
+                        <span>SHOWREEL / 2026</span>
+                        <span class="pulse">●</span>
+                    </div>
+                    <div class="hero-card-center">
+                        <video
+                            id="heroVideo"
+                            class="hero-video"
+                            poster="images/hero-thumbnail.png"
+                            loop
+                            playsinline
+                            preload="none">
+                            <source src="videos/BeforeAfteredit.mp4" type="video/mp4">
+                        </video>
+                        <button class="hero-play-button" id="heroPlayButton" type="button" aria-label="Play video">▶</button>
+                    </div>                
+                <div class="hero-card-bottom">
+                    <span>EDIT / SOUND / MOTION</span>
+                    <span>SCROLL ↓</span>
+                </div>
+            </div>
+                </div>
+                <div class="floating-tag tag-one">CUT</div>
+                <div class="floating-tag tag-two">MOTION</div>
+                <div class="floating-tag tag-three">SOUND</div>
+            </div>
+        </section>
+
+        <section class="showreel-section section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="eyebrow">01 / SHOWREEL</p>
+                        <h2>A minute of<br><span>what I do.</span></h2>
+                    </div>
+                    <p class="section-note">Buying Iconic Roblox Theams In Dress To Impress</p>
+                </div>
+
+                <div class="video-frame reveal">
+                    <video id="showreelVideo" controls playsinline preload="metadata" poster="images/showreel-thumbnail.jpg">
+                        <source src="videos/showreel.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <button class="showreel-play-button" id="showreelPlayButton" type="button" aria-label="Play showreel">▶</button>
+                    <div class="video-placeholder" id="showreelPlaceholder">
+                        <div class="placeholder-play">▶</div>
+                        <p>ADD YOUR SHOWREEL</p>
+                        <small>Place your file at <code>videos/showreel.mp4</code></small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-section section" id="work">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="eyebrow">02 / SELECTED WORK</p>
+                        <h2>Work that<br><span>speaks.</span></h2>
+                    </div>
+                    <p class="section-note">Click a category to filter the projects.</p>
+                </div>
+
+                <div class="filters reveal" role="tablist" aria-label="Project categories">
+                    <button class="filter active" data-filter="all">All</button>
+                    <button class="filter" data-filter="youtube">YouTube</button>
+                    <button class="filter" data-filter="shorts">Shorts</button>
+                    <button class="filter" data-filter="ads">Ads</button>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card reveal" data-category="youtube" data-title="YouTube Edit" data-type="YouTube" data-video="videos/facecam_edit.mp4">
+                        <div class="project-media media-three">
+                            <span class="project-number">03</span>
+                            <video class="project-video" muted loop playsinline preload="metadata" poster="images/youtube-edit-thumbnail.png" src="videos/facecam_edit.mp4"></video>
+                            <div class="project-play">▶</div>
+                            <span class="media-label">YOUTUBE / EDIT</span>
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <h3>YouTube Edit</h3>
+                                <p>Fast Cuts · SFX · Beat Sync</p>
+                            </div>
+                            <button class="view-project" aria-label="View YouTube Edit">↗</button>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="ads" data-title="Real Estate Edit" data-type="Ads" data-video="videos/first_client_edit.mp4">
+                        <div class="project-media media-four">
+                            <span class="project-number">04</span>
+                            <video class="project-video" muted loop playsinline preload="metadata" src="videos/first_client_edit.mp4"></video>
+                            <div class="project-play">▶</div>
+                            <span class="media-label">PROMO / AD</span>
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <h3>Real Estate Edit</h3>
+                                <p>Commercial Edit · Motion</p>
+                            </div>
+                            <button class="view-project" aria-label="View Real Estate Edit">↗</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section section" id="services">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="eyebrow">03 / SERVICES</p>
+                        <h2>What I can<br><span>edit for you.</span></h2>
+                    </div>
+                </div>
+
+                <div class="service-list">
+                    <div class="service-row reveal">
+                        <span class="service-index">01</span>
+                        <h3>YouTube Editing</h3>
+                        <p>Long-form edits with strong pacing, storytelling, sound design and clean visuals.</p>
+                        <span class="service-arrow">↗</span>
+                    </div>
+
+                    <div class="service-row reveal">
+                        <span class="service-index">02</span>
+                        <h3>Shorts & Reels</h3>
+                        <p>Fast, engaging vertical content with captions, hooks, cuts and motion.</p>
+                        <span class="service-arrow">↗</span>
+                    </div>
+
+                    <div class="service-row reveal">
+                        <span class="service-index">03</span>
+                        <h3>Gaming Videos</h3>
+                        <p>High-energy gameplay edits, montages, memes, sound effects and beat sync.</p>
+                        <span class="service-arrow">↗</span>
+                    </div>
+
+                    <div class="service-row reveal">
+                        <span class="service-index">04</span>
+                        <h3>Promotional Videos</h3>
+                        <p>Short commercial edits designed to communicate a product or idea quickly.</p>
+                        <span class="service-arrow">↗</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="eyebrow">04 / PROCESS</p>
+                        <h2>Simple process.<br><span>Strong output.</span></h2>
+                    </div>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-card reveal">
+                        <span>01</span>
+                        <h3>Brief</h3>
+                        <p>We define the goal, audience, style, references and deliverables.</p>
+                    </div>
+                    <div class="process-card reveal">
+                        <span>02</span>
+                        <h3>Rough Cut</h3>
+                        <p>I build the story, pacing and structure before polishing the details.</p>
+                    </div>
+                    <div class="process-card reveal">
+                        <span>03</span>
+                        <h3>Polish</h3>
+                        <p>Sound, captions, motion, transitions and color bring the edit together.</p>
+                    </div>
+                    <div class="process-card reveal">
+                        <span>04</span>
+                        <h3>Delivery</h3>
+                        <p>Final export delivered in the format and dimensions your platform needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section section" id="about">
+            <div class="container about-grid">
+                <div class="about-title reveal">
+                    <p class="eyebrow">05 / ABOUT</p>
+                    <h2>Behind the<br><span>timeline.</span></h2>
+                </div>
+
+                <div class="about-copy reveal">
+                    <p class="about-lead">
+                        I'm Samihan — a video editor who enjoys turning raw footage
+                        into content that feels intentional, energetic and easy to watch.
+                    </p>
+                    <p>
+                        I focus on the details that make an edit work: rhythm, story,
+                        sound, visual hierarchy and moments that keep the viewer moving
+                        to the next second.
+                    </p>
+
+                    <div class="software-list">
+                        <span>PREMIERE PRO</span>
+                        <span>AFTER EFFECTS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section" id="contact">
+            <div class="container">
+                <div class="contact-box reveal">
+                    <p class="eyebrow">06 / CONTACT</p>
+                    <h2>Have footage?<br><span>Let's make it move.</span></h2>
+                    <p class="contact-text">
+                        Tell me what you're working on, what you need edited,
+                        and where you want the final video to live.
+                    </p>
+
+                    <div class="contact-actions">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=samihanjoshi332@gmail.com&su=Video%20Editing%20Project" target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic">
+                            Email me <span>↗</span>
+                        </a>
+                        <a href="https://www.instagram.com/editbysamihan/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                            Instagram <span>↗</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="Samihan logo">
+                <span>SAMIHAN</span>
+            </div>
+            <p>Video Editor · Creator · Visual Storyteller</p>
+            <a href="#top">Back to top ↑</a>
+        </div>
+        <div class="container footer-bottom">
+            <span>© <span id="year"></span> Samihan Joshi</span>
+            <span>Thanks for visiting!</span>
+        </div>
+    </footer>
+
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" aria-label="Close project">×</button>
+            <div class="modal-visual">
+                <div class="modal-play">▶</div>
+                <video class="modal-video" controls playsinline></video>
+            </div>
+            <p class="eyebrow" id="modalType">PROJECT</p>
+            <h3 id="modalTitle">Project title</h3>
+            <p class="modal-copy">
+                Add the real project description, client goal and a link/video here when you replace this placeholder.
+            </p>
+            <a href="#contact" class="btn btn-primary modal-contact">Want an edit like this? ↗</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

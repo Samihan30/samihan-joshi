@@ -132,77 +132,166 @@
             </div>
         </section>
 
-        <section class="work-section section" id="work">
-            <div class="container">
-                <div class="section-heading reveal">
-                    <div>
-                        <p class="eyebrow">02 / SELECTED WORK</p>
-                        <h2>Work that<br><span>speaks.</span></h2>
-                    </div>
-                    <p class="section-note">Click a category to filter the projects.</p>
-                </div>
+      <section class="work" id="work">
 
-                <div class="filters reveal" role="tablist" aria-label="Project categories">
-                    <button class="filter active" data-filter="all">All</button>
-                    <button class="filter" data-filter="youtube">YouTube</button>
-                    <button class="filter" data-filter="shorts">Shorts</button>
-                    <button class="filter" data-filter="ads">Ads</button>
-                </div>
+    <div class="section-head reveal">
+        <div>
+            <span class="eyebrow">02 / SELECTED WORK</span>
+            <h2>Work that speaks.</h2>
+        </div>
 
-                <div class="project-grid">
-                    <article class="project-card reveal" data-category="youtube" data-title="YouTube Edit" data-type="YouTube" data-video="videos/Maya edit.mp4">
-                        <div class="project-media media-three">
-                            <span class="project-number">03</span>
-                            <video class="project-video" muted loop playsinline preload="metadata" poster="here" src="videos/Maya edit.mp4"></video>
-                            <div class="project-play">▶</div>
-                            <span class="media-label">YOUTUBE / EDIT</span>f
-                        </div>
-                        <div class="project-info">
-                            <div>
-                                <h3>YouTube Edit</h3>
-                                <p>Fast Cuts · SFX · Beat Sync</p>
-                            </div>
-                            <button class="view-project" aria-label="View YouTube Edit">↗</button>
-                        </div>
-                    </article>
-
-                    <div class="project-grid">
-                    <article class="project-card reveal" data-category="youtube" data-title="YouTube Edit" data-type="YouTube" data-video="videos/facecam_edit.mp4">
-                        <div class="project-media media-three">
-                            <span class="project-number">03</span>
-                            <video class="project-video" muted loop playsinline preload="metadata" poster="images/youtube-edit-thumbnail.png" src="videos/facecam_edit.mp4"></video>
-                            <div class="project-play">▶</div>
-                            <span class="media-label">YOUTUBE / EDIT</span>
-                        </div>
-                        <div class="project-info">
-                            <div>
-                                <h3>YouTube Edit</h3>
-                                <p>Fast Cuts · SFX · Beat Sync</p>
-                            </div>
-                            <button class="view-project" aria-label="View YouTube Edit">↗</button>
-                        </div>
-                    </article>
+        <div class="work-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="youtube">YouTube</button>
+            <button class="filter-btn" data-filter="ads">Ads</button>
+        </div>
+    </div>
 
 
-                    <article class="project-card reveal" data-category="ads" data-title="Real Estate Edit" data-type="Ads" data-video="videos/first_client_edit.mp4">
-                        <div class="project-media media-four">
-                            <span class="project-number">04</span>
-                            <video class="project-video" muted loop playsinline preload="metadata" src="videos/first_client_edit.mp4"></video>
-                            <div class="project-play">▶</div>
-                            <span class="media-label">PROMO / AD</span>
-                        </div>
-                        <div class="project-info">
-                            <div>
-                                <h3>Real Estate Edit</h3>
-                                <p>Commercial Edit · Motion</p>
-                            </div>
-                            <button class="view-project" aria-label="View Real Estate Edit">↗</button>
-                        </div>
-                    </article>
-                </div>
+    <div class="project-grid">
+
+        <!-- VIDEO 01 -->
+        <article class="project-card reveal"
+            data-category="youtube"
+            data-title="YouTube Edit"
+            data-type="YouTube"
+            data-video="videos/Maya edit.mp4">
+
+            <div class="project-media media-three">
+                <span class="project-number">03</span>
+
+                <video
+                    class="project-video"
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    src="videos/Maya edit.mp4">
+                </video>
+
+                <div class="project-play">▶</div>
+
+                <span class="media-label">YOUTUBE / EDIT</span>
             </div>
-        </section>
 
+            <div class="project-info">
+                <div>
+                    <h3>YouTube Edit</h3>
+                    <p>Fast Cuts · SFX · Beat Sync</p>
+                </div>
+
+                <button class="view-project" aria-label="View YouTube Edit">↗</button>
+            </div>
+        </article>
+
+
+        <!-- VIDEO 02 -->
+        <article class="project-card reveal"
+            data-category="youtube"
+            data-title="YouTube Edit"
+            data-type="YouTube"
+            data-video="videos/facecam_edit.mp4">
+
+            <div class="project-media media-three">
+                <span class="project-number">04</span>
+
+                <video
+                    class="project-video"
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    src="videos/facecam_edit.mp4">
+                </video>
+
+                <div class="project-play">▶</div>
+
+                <span class="media-label">YOUTUBE / EDIT</span>
+            </div>
+
+            <div class="project-info">
+                <div>
+                    <h3>YouTube Edit</h3>
+                    <p>Fast Cuts · SFX · Beat Sync</p>
+                </div>
+
+                <button class="view-project" aria-label="View YouTube Edit">↗</button>
+            </div>
+        </article>
+
+
+        <!-- VIDEO 03 -->
+        <article class="project-card reveal"
+            data-category="ads"
+            data-title="Real Estate Edit"
+            data-type="Ads"
+            data-video="videos/first_client_edit.mp4">
+
+            <div class="project-media media-four">
+                <span class="project-number">05</span>
+
+                <video
+                    class="project-video"
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    src="videos/first_client_edit.mp4">
+                </video>
+
+                <div class="project-play">▶</div>
+
+                <span class="media-label">ADS / EDIT</span>
+            </div>
+
+            <div class="project-info">
+                <div>
+                    <h3>Real Estate Edit</h3>
+                    <p>Fast Cuts · SFX · Beat Sync</p>
+                </div>
+
+                <button class="view-project" aria-label="View Real Estate Edit">↗</button>
+            </div>
+        </article>
+
+
+        <!-- NEW VIDEO SLOT -->
+        <article class="project-card reveal"
+            data-category="youtube"
+            data-title="New Video Edit"
+            data-type="YouTube"
+            data-video="YOUR_VIDEO_URL_HERE">
+
+            <div class="project-media media-three">
+                <span class="project-number">06</span>
+
+                <video
+                    class="project-video"
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    src="YOUR_VIDEO_URL_HERE">
+                </video>
+
+                <div class="project-play">▶</div>
+
+                <span class="media-label">YOUTUBE / EDIT</span>
+            </div>
+
+            <div class="project-info">
+                <div>
+                    <h3>New Video Edit</h3>
+                    <p>Fast Cuts · SFX · Beat Sync</p>
+                </div>
+
+                <button class="view-project" aria-label="View New Video Edit">↗</button>
+            </div>
+        </article>
+
+    </div>
+
+</section>
         <section class="services-section section" id="services">
             <div class="container">
                 <div class="section-heading reveal">
